@@ -25,36 +25,83 @@
             <objects>
                 <viewController storyboardIdentifier="QuotesViewController" id="Jes-4b-0YO" customClass="QuotesViewController" customModule="AntiMoment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Xti-wP-Mai">
-                        <rect key="frame" x="0.0" y="0.0" width="370" height="443"/>
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="428"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="qlv-4o-EZG">
-                                <rect key="frame" x="0.0" y="382" width="370" height="5"/>
+                                <rect key="frame" x="0.0" y="367" width="338" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
-                            <textField identifier="top_lable" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6b-K4-gCo">
-                                <rect key="frame" x="-2" y="401" width="374" height="21"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6b-K4-gCo">
+                                <rect key="frame" x="-2" y="387" width="342" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="My Moment" id="ebx-K7-odR">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="我的时光" id="ebx-K7-odR">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxQ-gM-Dri">
+                                <rect key="frame" x="-2" y="125" width="342" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="1996年12月23号 · 8595天" id="ley-ap-UW4">
                                     <font key="font" metaFont="system" size="15"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUX-0D-0DC">
-                                <rect key="frame" x="123" y="219" width="125" height="125"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2U-uT-wJL">
+                                <rect key="frame" x="-2" y="172" width="342" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="ooQ-02-Zeg"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="凌  敏" id="QXr-P3-0XQ">
+                                    <font key="font" size="22" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box focusRingType="none" fixedFrame="YES" boxType="custom" cornerRadius="8" title="水电费水电费" translatesAutoresizingMaskIntoConstraints="NO" id="fpJ-DD-ETL">
+                                <rect key="frame" x="41" y="40" width="257" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" id="WXe-He-Hb4">
+                                    <rect key="frame" x="1" y="1" width="255" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField canDrawConcurrently="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czq-8N-Lie">
+                                            <rect key="frame" x="16" y="11" width="222" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" allowsUndo="NO" focusRingType="none" alignment="center" title="24.34835823 岁" drawsBackground="YES" allowsEditingTextAttributes="YES" id="vbU-Zw-Fq6">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" red="0.81568628549575806" green="0.20392157137393951" blue="0.22352941334247589" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                                <color key="borderColor" red="0.51455229922279799" green="0.51455229922279799" blue="0.51455229922279799" alpha="0.5490196078431373" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="fillColor" red="0.79788698186528495" green="0.79788698186528495" blue="0.79788698186528495" alpha="0.044288093758630263" colorSpace="custom" customColorSpace="displayP3"/>
+                            </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUX-0D-0DC">
+                                <rect key="frame" x="121" y="230" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="avatar" id="ooQ-02-Zeg"/>
                             </imageView>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="textAge" destination="czq-8N-Lie" id="3fu-KW-t1a"/>
                         <outlet property="textLabel" destination="C6b-K4-gCo" id="y5N-gx-PbS"/>
+                        <outlet property="textYear" destination="hxQ-gM-Dri" id="KKk-EI-EXN"/>
                     </connections>
                 </viewController>
                 <customObject id="YqE-UK-p8r" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="-206.5"/>
+            <point key="canvasLocation" x="122" y="-214"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar" width="157.5" height="157.5"/>
+    </resources>
 </document>
