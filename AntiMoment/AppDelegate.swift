@@ -1,49 +1,37 @@
-//
-//  AppDelegate.swift
-//  AntiMoment
-//
-//  Created by min.ling on 2020/7/5.
-//  Copyright © 2020 Zonx. All rights reserved.
-//
-
 import Cocoa
 import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    var window: NSWindow!
+    
     let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
+    let popover = NSPopover()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view that provides the window contents.
-//        let contentView = ContentView()
+        popover.contentViewController = QuotesViewController.freshController()
         if let button = statusItem.button {
-          button.image = NSImage(named:NSImage.Name("sun"))
-          button.action = #selector(printQuote(_:))
+          button.image = NSImage(named:NSImage.Name("honorary"))
+          button.action = #selector(togglePopover(_:))
+        }
+    }
+    
+    @objc func togglePopover(_ sender: Any?) {
+      if popover.isShown {
+        ​closePopover(sender: sender)
+      } else {
+        ​showPopover(sender: sender)
+      }
+    }
+
+    func ​showPopover(sender: Any?) {
+        if let button = statusItem.button{
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
 
-
-        // Create the window and set the content view.
-//        window = NSWindow(
-//            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-//            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-//            backing: .buffered, defer: false)
-//        window.center()
-//        window.setFrameAutosaveName("Main Window")
-//        window.contentView = NSHostingView(rootView: contentView)
-//        window.makeKeyAndOrderFront(nil)
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-    @objc func printQuote(_ sender: Any?) {
-      let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
-      let quoteAuthor = "Mark Twain"
-      
-      print("\(quoteText) — \(quoteAuthor)")
+    func ​closePopover(sender: Any?) {
+        popover.performClose(sender)
     }
 }
 
