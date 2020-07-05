@@ -9,7 +9,9 @@
 import Cocoa
 
 class QuotesViewController: NSViewController {
-
+    
+    @IBOutlet var textLabel : NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

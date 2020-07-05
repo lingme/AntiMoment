@@ -14,24 +14,47 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AntiMoment" customModuleProvider="target"/>
-                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AntiMoment" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="138" y="-592"/>
         </scene>
         <!--Quotes View Controller-->
         <scene sceneID="SBQ-jU-BPJ">
             <objects>
                 <viewController storyboardIdentifier="QuotesViewController" id="Jes-4b-0YO" customClass="QuotesViewController" customModule="AntiMoment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Xti-wP-Mai">
-                        <rect key="frame" x="0.0" y="0.0" width="370" height="546"/>
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="443"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="qlv-4o-EZG">
+                                <rect key="frame" x="0.0" y="382" width="370" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                            <textField identifier="top_lable" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6b-K4-gCo">
+                                <rect key="frame" x="-2" y="401" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="My Moment" id="ebx-K7-odR">
+                                    <font key="font" metaFont="system" size="15"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUX-0D-0DC">
+                                <rect key="frame" x="123" y="219" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="ooQ-02-Zeg"/>
+                            </imageView>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="C6b-K4-gCo" id="y5N-gx-PbS"/>
+                    </connections>
                 </viewController>
                 <customObject id="YqE-UK-p8r" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="-146"/>
+            <point key="canvasLocation" x="138" y="-206.5"/>
         </scene>
     </scenes>
 </document>
