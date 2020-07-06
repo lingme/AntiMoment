@@ -20,6 +20,15 @@ class QuotesViewController: NSViewController {
     }
     
     @objc func update() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd"
+        let date1 = dateFormatter.date(from: "1996/12/23")
+        let date2 = Date().addingTimeInterval(TimeInterval(NSTimeZone.system.secondsFromGMT()))
+        let componentsDay = NSCalendar.current.dateComponents([.day], from: date1!, to: date2)
+        let componentsYear = NSCalendar.current.dateComponents([.year], from: date1!, to: date2)
+        
+        textYear.stringValue = String(format:"%@ · %@天", "1996年12月23号", String(componentsDay.day!))
+        textAge.stringValue = String(format:"%@.%@ 岁", String(componentsYear.year!), String(Int(Date().timeIntervalSinceReferenceDate)))
     }
 }
 
@@ -33,5 +42,4 @@ extension QuotesViewController {
     }
     return viewcontroller
   }
-
 }
