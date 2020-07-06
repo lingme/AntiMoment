@@ -10,7 +10,6 @@ import Cocoa
 
 class QuotesViewController: NSViewController {
     
-    @IBOutlet var textLabel : NSTextField!
     @IBOutlet var textYear : NSTextField!
     @IBOutlet var textAge : NSTextField!
     

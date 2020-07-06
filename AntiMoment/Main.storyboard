@@ -45,7 +45,7 @@
                                 <rect key="frame" x="-2" y="86" width="270" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" id="ley-ap-UW4">
-                                    <font key="font" metaFont="system" size="12"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -92,7 +92,6 @@
                     </view>
                     <connections>
                         <outlet property="textAge" destination="czq-8N-Lie" id="3fu-KW-t1a"/>
-                        <outlet property="textLabel" destination="C6b-K4-gCo" id="y5N-gx-PbS"/>
                         <outlet property="textYear" destination="hxQ-gM-Dri" id="KKk-EI-EXN"/>
                     </connections>
                 </viewController>
