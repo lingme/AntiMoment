@@ -54,12 +54,12 @@
                                 <rect key="frame" x="-2" y="172" width="342" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="凌  敏" id="QXr-P3-0XQ">
-                                    <font key="font" size="22" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system" size="22"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <box focusRingType="none" fixedFrame="YES" boxType="custom" cornerRadius="8" title="水电费水电费" translatesAutoresizingMaskIntoConstraints="NO" id="fpJ-DD-ETL">
+                            <box focusRingType="none" fixedFrame="YES" boxType="custom" cornerRadius="8" translatesAutoresizingMaskIntoConstraints="NO" id="fpJ-DD-ETL">
                                 <rect key="frame" x="41" y="40" width="257" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="WXe-He-Hb4">
