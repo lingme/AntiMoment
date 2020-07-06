@@ -33,10 +33,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6b-K4-gCo">
-                                <rect key="frame" x="-2" y="387" width="342" height="21"/>
+                                <rect key="frame" x="-2" y="387" width="342" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="我的时光" id="ebx-K7-odR">
-                                    <font key="font" metaFont="system" size="18"/>
+                                    <font key="font" metaFont="system" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -44,14 +44,14 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxQ-gM-Dri">
                                 <rect key="frame" x="-2" y="125" width="342" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="1996年12月23号 · 8595天" id="ley-ap-UW4">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" id="ley-ap-UW4">
                                     <font key="font" metaFont="system" size="15"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2U-uT-wJL">
-                                <rect key="frame" x="-2" y="172" width="342" height="22"/>
+                                <rect key="frame" x="-2" y="168" width="342" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="凌  敏" id="QXr-P3-0XQ">
                                     <font key="font" metaFont="system" size="22"/>
@@ -69,7 +69,7 @@
                                         <textField canDrawConcurrently="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czq-8N-Lie">
                                             <rect key="frame" x="16" y="11" width="222" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" allowsUndo="NO" focusRingType="none" alignment="center" title="24.34835823 岁" drawsBackground="YES" allowsEditingTextAttributes="YES" id="vbU-Zw-Fq6">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" allowsUndo="NO" focusRingType="none" alignment="center" drawsBackground="YES" allowsEditingTextAttributes="YES" id="vbU-Zw-Fq6">
                                                 <font key="font" metaFont="system" size="18"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" red="0.81568628549575806" green="0.20392157137393951" blue="0.22352941334247589" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
